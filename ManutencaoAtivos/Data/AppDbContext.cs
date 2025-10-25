@@ -13,7 +13,7 @@ namespace ManutencaoAtivos.Data
 //lista tabelas do models que inclui o banco(colocar tudo que tem em models no mesmo padrao)
         public DbSet<Caminhao> Caminhao { get; set; }
         public DbSet<HistoricoManutencao> HistoricoManutencao { get; set; }
-        public DbSet<OrdemServiso> OrdemServiso { get; set; }
+        public DbSet<OrdemServico> OrdemServico { get; set; }
 
     }
 
