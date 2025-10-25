@@ -1,12 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using ManutencaoAtivos.Data;
+using ManutencaoAtivos.Controllers;
+using Microsoft.OpenApi.Models;
 
-var builder = WebApplication.CreateBuilder(args)
+var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AppDbContext<AppDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
-builder.Services.AddEndpontsApiExplorer();
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
@@ -17,7 +20,7 @@ if(app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
