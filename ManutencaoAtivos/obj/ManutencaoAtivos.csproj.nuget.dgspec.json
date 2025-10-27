@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gugra\\OneDrive\\Área de Trabalho\\projeto-csh-api-caminhoescontroller-patch\\ManutencaoAtivos\\ManutencaoAtivos.csproj": {}
+    "C:\\Users\\GUSTAVOSTACOVIAKIGRA\\Downloads\\projeto-csh-api-main\\ManutencaoAtivos\\ManutencaoAtivos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gugra\\OneDrive\\Área de Trabalho\\projeto-csh-api-caminhoescontroller-patch\\ManutencaoAtivos\\ManutencaoAtivos.csproj": {
+    "C:\\Users\\GUSTAVOSTACOVIAKIGRA\\Downloads\\projeto-csh-api-main\\ManutencaoAtivos\\ManutencaoAtivos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gugra\\OneDrive\\Área de Trabalho\\projeto-csh-api-caminhoescontroller-patch\\ManutencaoAtivos\\ManutencaoAtivos.csproj",
+        "projectUniqueName": "C:\\Users\\GUSTAVOSTACOVIAKIGRA\\Downloads\\projeto-csh-api-main\\ManutencaoAtivos\\ManutencaoAtivos.csproj",
         "projectName": "ManutencaoAtivos",
-        "projectPath": "C:\\Users\\gugra\\OneDrive\\Área de Trabalho\\projeto-csh-api-caminhoescontroller-patch\\ManutencaoAtivos\\ManutencaoAtivos.csproj",
-        "packagesPath": "C:\\Users\\gugra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gugra\\OneDrive\\Área de Trabalho\\projeto-csh-api-caminhoescontroller-patch\\ManutencaoAtivos\\obj\\",
+        "projectPath": "C:\\Users\\GUSTAVOSTACOVIAKIGRA\\Downloads\\projeto-csh-api-main\\ManutencaoAtivos\\ManutencaoAtivos.csproj",
+        "packagesPath": "C:\\Users\\GUSTAVOSTACOVIAKIGRA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GUSTAVOSTACOVIAKIGRA\\Downloads\\projeto-csh-api-main\\ManutencaoAtivos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gugra\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\GUSTAVOSTACOVIAKIGRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

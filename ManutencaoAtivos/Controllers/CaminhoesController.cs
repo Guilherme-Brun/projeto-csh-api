@@ -9,7 +9,39 @@ namespace ManutencaoAtivos.Controllers
     [Route("caminhoes")]
     public class CaminhoesController : ControllerBase
     {
-        private static List<Caminhao> caminhoes = new();
+        public static List<Caminhao> caminhoes = new()
+        {
+            new Caminhao(Guid.NewGuid(), "AAA-0001", "Volvo FH", 2018),
+            new Caminhao(Guid.NewGuid(), "AAA-0002", "Scania R450", 2019),
+            new Caminhao(Guid.NewGuid(), "AAA-0003", "Mercedes Actros", 2020),
+            new Caminhao(Guid.NewGuid(), "AAA-0004", "DAF XF", 2017),
+            new Caminhao(Guid.NewGuid(), "AAA-0005", "Iveco Stralis", 2016),
+            new Caminhao(Guid.NewGuid(), "AAA-0006", "MAN TGX", 2021),
+            new Caminhao(Guid.NewGuid(), "AAA-0007", "Volvo FMX", 2019),
+            new Caminhao(Guid.NewGuid(), "AAA-0008", "Scania R500", 2020),
+            new Caminhao(Guid.NewGuid(), "AAA-0009", "Mercedes Axor", 2015),
+            new Caminhao(Guid.NewGuid(), "AAA-0010", "Volkswagen Constellation", 2022),
+            new Caminhao(Guid.NewGuid(), "AAA-0011", "Volvo FH16", 2018),
+            new Caminhao(Guid.NewGuid(), "AAA-0012", "Scania G410", 2019),
+            new Caminhao(Guid.NewGuid(), "AAA-0013", "Mercedes Atego", 2017),
+            new Caminhao(Guid.NewGuid(), "AAA-0014", "DAF CF", 2020),
+            new Caminhao(Guid.NewGuid(), "AAA-0015", "Iveco Hi-Way", 2016),
+            new Caminhao(Guid.NewGuid(), "AAA-0016", "MAN TGS", 2021),
+            new Caminhao(Guid.NewGuid(), "AAA-0017", "Volvo VM", 2018),
+            new Caminhao(Guid.NewGuid(), "AAA-0018", "Scania P340", 2015),
+            new Caminhao(Guid.NewGuid(), "AAA-0019", "Mercedes Atego 2426", 2023),
+            new Caminhao(Guid.NewGuid(), "AAA-0020", "Volkswagen Meteor", 2022),
+            new Caminhao(Guid.NewGuid(), "AAA-0021", "Volvo FH540", 2019),
+            new Caminhao(Guid.NewGuid(), "AAA-0022", "Scania S500", 2020),
+            new Caminhao(Guid.NewGuid(), "AAA-0023", "Mercedes Axor 2544", 2018),
+            new Caminhao(Guid.NewGuid(), "AAA-0024", "DAF XF105", 2017),
+            new Caminhao(Guid.NewGuid(), "AAA-0025", "Iveco Tector", 2021),
+            new Caminhao(Guid.NewGuid(), "AAA-0026", "MAN TGX 29.480", 2019),
+            new Caminhao(Guid.NewGuid(), "AAA-0027", "Volvo FH460", 2020),
+            new Caminhao(Guid.NewGuid(), "AAA-0028", "Scania R410", 2021),
+            new Caminhao(Guid.NewGuid(), "AAA-0029", "Mercedes Actros 2651", 2023),
+            new Caminhao(Guid.NewGuid(), "AAA-0030", "Volkswagen Delivery", 2022)
+        };
 
         private static bool PlacaExiste(string placa, Guid? ignorarId = null)
         {
