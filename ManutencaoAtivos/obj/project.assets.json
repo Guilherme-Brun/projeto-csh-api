@@ -1566,19 +1566,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gugra\\.nuget\\packages\\": {}
+    "C:\\Users\\alexh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gugra\\OneDrive\\Área de Trabalho\\projeto-csh-api-caminhoescontroller-patch\\ManutencaoAtivos\\ManutencaoAtivos.csproj",
+      "projectUniqueName": "C:\\Users\\alexh\\AppData\\Local\\GitHubDesktop\\app-3.5.3\\projeto-csh-api\\ManutencaoAtivos\\ManutencaoAtivos.csproj",
       "projectName": "ManutencaoAtivos",
-      "projectPath": "C:\\Users\\gugra\\OneDrive\\Área de Trabalho\\projeto-csh-api-caminhoescontroller-patch\\ManutencaoAtivos\\ManutencaoAtivos.csproj",
-      "packagesPath": "C:\\Users\\gugra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gugra\\OneDrive\\Área de Trabalho\\projeto-csh-api-caminhoescontroller-patch\\ManutencaoAtivos\\obj\\",
+      "projectPath": "C:\\Users\\alexh\\AppData\\Local\\GitHubDesktop\\app-3.5.3\\projeto-csh-api\\ManutencaoAtivos\\ManutencaoAtivos.csproj",
+      "packagesPath": "C:\\Users\\alexh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexh\\AppData\\Local\\GitHubDesktop\\app-3.5.3\\projeto-csh-api\\ManutencaoAtivos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gugra\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\alexh\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1596,7 +1596,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net7.0": {
@@ -1634,7 +1640,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
