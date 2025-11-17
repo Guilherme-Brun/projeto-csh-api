@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordens de Serviço</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/ordens.css"> 
+    <link rel="stylesheet" href="css/cadastrar.css">
+</head>
+
+<body class="fade-in">
+
+<!-- 🔵 NAVBAR -->
+<nav class="navbar navbar-dark" style="background:#222">
+    <div class="container d-flex align-items-center">
+
+        <span class="navbar-brand fw-bold">
+            <i class="bi bi-wrench-adjustable text-warning"></i> Ordens de Serviço
+        </span>
+
+        <div class="ms-auto d-flex gap-2">
+
+            <button class="btn btn-outline-light btn-sm" onclick="location.href='index.html'">
+                <i class="bi bi-house-door-fill"></i>
+            </button>
+
+            <button id="darkModeBtn" class="btn btn-outline-light btn-sm">
+                <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    <h3 class="fw-bold mb-3 text-center">
+        <i class="bi bi-tools text-warning"></i> Lista de Ordens
+    </h3>
+
+    <!-- 🔹 FILTROS -->
+    <div class="row g-2 mb-3">
+        <div class="col-sm-3">
+            <select id="filtroStatus" class="form-select form-select-sm">
+                <option value="">📌 Status</option>
+                <option>Aberta</option>
+                <option>Em andamento</option>
+                <option>Concluída</option>
+                <option>Cancelada</option>
+            </select>
+        </div>
+
+        <div class="col-sm-3">
+            <input type="text" id="busca" class="form-control form-control-sm"
+                   placeholder="Buscar descrição...">
+        </div>
+    </div>
+
+    <!-- ➕ BOTÃO + CONTADOR -->
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <button class="btn btn-success btn-sm fw-semibold novo-btn"
+                onclick="location.href='cadastrar_ordem.html'">
+            <i class="bi bi-plus-circle"></i> Nova OS
+        </button>
+
+        <span class="text-muted small">
+            <i class="bi bi-list-ul"></i> <a id="textoSimples">Exibindo</a> <b id="countRange">0</b>
+        </span>
+    </div>
+
+    <!-- 📊 TABELA -->
+   <table class="table table-bordered table-hover align-middle shadow-sm" id="tabelaOrdens">
+        <thead class="table-dark text-center small">
+        <tr>
+            <th>ID</th>
+            <th>Placa</th>
+            <th>Tipo</th>
+            <th>Descrição</th>
+            <th>Custo</th>
+            <th>Status</th>
+            <th>Abertura</th>
+            <th>Conclusão</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody class="text-center small"></tbody>
+    </table>
+
+    <ul id="paginacao" class="pagination justify-content-center mt-3"></ul>
+</div>
+
+<footer class="footer-bar">
+    <i class="bi bi-shield-check"></i>
+    © 2025 — Sistema de Manutenção de veículos ·
+    <b>Alex Silva · Bruna Ferreira · Guilherme Grassi · Gustavo Grassi</b>
+</footer>
+
+<!-- 🔔 TOAST SUPERIOR CENTRAL -->
+<div class="toast-container position-fixed top-0 start-50 translate-middle-x mt-3" style="z-index:9999;">
+    <div id="toastMsgBox" class="toast align-items-center border-0 shadow-lg" role="alert" data-bs-delay="2500">
+        <div class="d-flex">
+            <div id="toastMsg" class="toast-body fw-semibold"></div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/ordens.js"></script>
+<script src="js/darkmode.js"></script>
+
+</body>
+</html>
+

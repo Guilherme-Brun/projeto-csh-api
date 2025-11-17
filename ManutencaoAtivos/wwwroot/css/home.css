@@ -1,0 +1,132 @@
+ :root {
+        color-scheme: light dark;
+    }
+    body {
+        background: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        transition: 0.3s;
+    }
+   
+  /* HERO BAR */
+        .hero {
+            background: linear-gradient(90deg, #102542, #1e3a8a);
+            padding: 55px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: 800;
+        }
+
+        /* Dark Mode Transition */
+        body {
+            transition: 0.28s;
+        }
+/* 🌙 ===== D A R K   M O D E ===== */
+
+body.dark-mode {
+    background: #222 !important;   /* fundo escuro elegante */
+    color: white !important;
+}
+
+/* mantém os CARDS brancos */
+body.dark-mode .card {
+    background: #ffffff !important;
+    color: #000 !important;
+}
+
+/* mantém FOOTER escuro */
+.footer-fixo {
+    background: #0e0e0e;
+    color: #bbb;
+}
+
+/* Cards menores */
+.menu-card {
+    cursor: pointer;
+    transition: 0.25s;
+    background: white;
+}
+
+.menu-card:hover {
+    transform: scale(1.04);
+    background: #f0f0f0 !important;
+}
+
+/* Footer fixo e discreto */
+
+.footer-fixo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #0e0e0e;
+    color: #bbb;
+    text-align: center;
+    font-size: 12px;
+    padding: 4px 0px;    
+    border-top: 1px solid #2a2a2a;
+    opacity: 0.85;
+    backdrop-filter: blur(4px);
+}
+
+
+/* Ícone com animação suave */
+.footer-icon i {
+    color: #0dcaf0;
+    font-size: 17px;
+    margin-right: 6px;
+    transition: 0.25s;
+}
+
+/* Animação no hover */
+.footer-fixo:hover .footer-icon i {
+    transform: scale(1.25) rotate(-8deg);
+    color: #66e0ff;
+}
+
+/* Mantém o mesmo padrão no modo escuro */
+body.dark-mode .footer-fixo {
+    background: #0b0b0b;
+    border-top: 1px solid #444;
+}
+/* 💫 ANIMAÇÃO DE BRILHO SUAVE */
+@keyframes glowPulse {
+    0%   { text-shadow: 0 0 3px #00eaff; opacity: 0.7; }
+    50%  { text-shadow: 0 0 12px #33ffff; opacity: 1; }
+    100% { text-shadow: 0 0 3px #00eaff; opacity: 0.7; }
+}
+
+/* Aplica o glow no ícone */
+.footer-icon i {
+    animation: glowPulse 2.5s ease-in-out infinite;
+}
+/* 🔹 Animação suave de entrada */
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* 🔹 Aplicando ao conteúdo principal */
+.page-animate {
+    animation: fadeInPage 0.65s ease-out;
+}
+.menu-card {
+    opacity: 0;
+    animation: fadeInPage 0.55s ease-out forwards;
+}
+
+.menu-card:nth-child(1) { animation-delay: 0.1s; }
+.menu-card:nth-child(2) { animation-delay: 0.22s; }
+.menu-card:nth-child(3) { animation-delay: 0.34s; }
+
+    

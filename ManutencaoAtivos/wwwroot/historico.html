@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Histórico de Manutenções</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    
+</head>
+
+<body class="pageBody">
+<h1>📜 Histórico de Ordens de Serviço</h1>
+<button class="btn btn-secondary" onclick="window.location.href='index.html'">⬅ Voltar ao Menu</button>
+
+
+<table id="tabelaHistorico">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Caminhão</th>
+        <th>Serviço</th>
+        <th>Data</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script>
+fetch("http://localhost:5024/historico")
+.then(r => r.json())
+.then(lista => {
+    const tbody = document.querySelector("#tabelaHistorico tbody");
+    lista.forEach(h => {
+        tbody.innerHTML += `
+            <tr>
+                <td>${h.id}</td>
+                <td>${h.caminhaoId}</td>
+                <td>${h.servico}</td>
+                <td>${new Date(h.data).toLocaleDateString("pt-BR")}</td>
+            </tr>
+        `;
+    });
+});
+</script>
+<footer class="footer-fixo">
+    <span class="footer-icon">
+        <i class="bi bi-shield-check"></i>
+    </span>
+    <span class="footer-text">
+        © 2025 — Sistema de Manutenção de Caminhões<br>
+        <strong>Alex Silva · Bruna Ferreira · Guilherme Grassi · Gustavo Grassi</strong>
+    </span>
+</footer>
+
+</body>
+</html>

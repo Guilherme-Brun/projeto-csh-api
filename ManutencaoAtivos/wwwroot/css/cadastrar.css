@@ -1,0 +1,106 @@
+form {
+    max-width: 750px;
+    margin: auto;
+}
+
+label i {
+    opacity: .7;
+    margin-right: 4px;
+}
+
+input, select {
+    font-size: 14px !important;
+}
+/* ============================
+   🌙 CORREÇÃO PARA DARK MODE
+   ============================ */
+
+body.dark-mode form {
+    background: #1a1a1a !important;
+    border: 1px solid #333;
+    color: #eee !important;
+}
+
+/* Rótulos do formulário */
+body.dark-mode label,
+body.dark-mode h4 {
+    color: #fff !important;
+}
+
+/* Inputs e selects */
+body.dark-mode input,
+body.dark-mode select {
+    background: #111 !important;
+    color: #eee !important;
+    border: 1px solid #555 !important;
+}
+
+/* Placeholders */
+body.dark-mode input::placeholder {
+    color: #aaa !important;
+}
+
+/* Ícones dentro dos labels */
+body.dark-mode label i {
+    color: #75caff !important;
+}
+/* ============================
+   🌙 DARK MODE - DATEPICKER FIX
+   ============================ */
+
+body.dark-mode input[type="date"] {
+    color-scheme: light !important;  /* força controle claro */
+    background: #ffffff !important;
+    color: #000 !important;
+}
+
+/* ícone do calendário */
+body.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0) !important;   /* fica preto */
+}
+/* 🔹 Container com ícone embutido */
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon i {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    color: #666;
+    pointer-events: none;
+}
+
+/* 🔹 Campo elegante */
+.input-icon input {
+    width: 100%;
+    padding: 8px 35px 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: .2s;
+    font-size: 15px;
+}
+
+/* 🔹 Borda azul ao focar */
+.input-icon input:focus {
+    border: 2px solid #0d6efd !important;
+    outline: none;
+}
+
+/* 🌙 Dark Mode */
+body.dark-mode .input-icon input {
+    background: #222;
+    color: white;
+    border: 1px solid #666;
+}
+
+body.dark-mode .input-icon i {
+    color: #bbb;
+}
+/* 🔔 Toast mais moderno */
+.toast {
+    border-radius: 10px !important;
+    backdrop-filter: blur(6px);
+}

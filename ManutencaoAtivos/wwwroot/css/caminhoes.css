@@ -1,0 +1,124 @@
+/* ==============================================
+   📊 TABELA ULTRA-COMPACTA (ESTILO SISTEMA SAP)
+   ==============================================*/
+#tabelaCaminhoes {
+    width: 100%;
+    border-radius: 8px !important;
+    overflow: hidden;
+    font-size: 11px !important;
+}
+
+/* Linhas SUPER BAIXAS */
+#tabelaCaminhoes th,
+#tabelaCaminhoes td {
+    padding: 2px 4px !important;
+    height: 18px !important;
+    line-height: 12px !important;
+    vertical-align: middle !important;
+}
+
+body.dark-mode #tabelaCaminhoes th,
+body.dark-mode #tabelaCaminhoes td {
+    background: #1a1a1a !important;
+    border: 1px solid #333;
+    color: #eee !important;
+}
+
+/* Cabeçalho minúsculo */
+#tabelaCaminhoes thead {
+    font-size: 10px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+/* Hover discreto */
+#tabelaCaminhoes tbody tr:hover {
+    background: #e7f2ff !important;
+    transition: 0.08s;
+}
+
+/* Última coluna super estreita */
+#tabelaCaminhoes td:last-child {
+    width: 48px !important;
+    white-space: nowrap;
+}
+
+/* ==============================================
+   🟢 BADGES BONITOS + COMPACTOS
+   ==============================================*/
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 9px !important;
+    padding: 2px 6px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+
+/* Cores SEM alterar o restante do site */
+.badge-status.ativo {
+    background: #198754 !important;
+    color: white !important;
+}
+
+.badge-status.manutencao {
+    background: #ffc107 !important;
+    color: #222 !important;
+}
+
+.badge-status.inativo {
+    background: #6c757d !important;
+    color: white !important;
+}
+
+
+/* ==============================================
+   🟩 BOTÃO + NOVO CAMINHÃO
+   ==============================================*/
+.novo-btn {
+    font-size: 11px !important;
+    padding: 3px 6px !important;
+    border-radius: 6px !important;
+}
+.novo-btn i {
+    font-size: 12px !important;
+}
+
+/* ==============================================
+   🔢 Paginação compacta
+   ==============================================*/
+.pagination .page-link {
+    font-size: 9px !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+}
+
+body.dark-mode .page-link {
+    background: #1a1a1a !important;
+    border: 1px solid #333;
+    color: #eee !important;
+}
+
+body.dark-mode .active {
+    background-color: white;
+    color: black;
+}
+
+#toastMsgBox {
+    animation: dropFade 0.35s ease-out;
+}
+
+@keyframes dropFade {
+    from { transform: translateY(-25px) scale(.95); opacity: 0; }
+    to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+
+
+
+
+
+
+

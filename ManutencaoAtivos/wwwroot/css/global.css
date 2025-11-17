@@ -1,0 +1,180 @@
+/* ==========================================================
+   🔹  BOTÕES PADRONIZADOS DO SISTEMA
+   ========================================================== */
+
+.btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.18s;
+    font-size: 15px;
+}
+
+/* Botão primário (Salvar, Editar, Confirmar) */
+.btn-primary {
+    background: #1e3a8a;
+    color: white;
+}
+.btn-primary:hover {
+    background: #132864;
+}
+
+/* Botão delete */
+.btn-danger {
+    background: #c0392b;
+    color: white;
+}
+.btn-danger:hover {
+    background: #922b21;
+}
+
+/* Botão voltar / secundário */
+.btn-secondary {
+    background: #444;
+    color: white;
+}
+.btn-secondary:hover {
+    background: #000;
+}
+
+/* Botão aviso */
+.btn-warning {
+    background: #eab308;
+    color: black;
+}
+.btn-warning:hover {
+    background: #b48e06;
+}
+
+/* Botão voltar antigo (mantido para compatibilidade) */
+.btn-voltar {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-voltar:hover {
+    background: black;
+}
+
+/* ==========================================================
+   🔹 FOOTER PROFISSIONAL
+   ========================================================== */
+
+.footer-fixo,
+.footer-bar {
+    width: 100vw;
+    background: #0e0e0e;
+    color: #bbb;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px 0;
+    border-top: 1px solid #2a2a2a;
+    backdrop-filter: blur(4px);
+    z-index: 20;
+}
+
+/* Ícone do footer */
+.footer-icon i,
+.footer-bar i {
+    color: #0dcaf0;
+    font-size: 15px;
+    margin-right: 4px;
+    animation: glowPulse 2.5s ease-in-out infinite;
+    transition: 0.25s;
+}
+
+/* Hover animado */
+.footer-fixo:hover .footer-icon i,
+.footer-bar:hover i {
+    transform: scale(1.25) rotate(-8deg);
+    color: #66e0ff;
+}
+
+/* Animação de brilho suave */
+@keyframes glowPulse {
+    0%   { text-shadow: 0 0 3px #00eaff; opacity: 0.7; }
+    50%  { text-shadow: 0 0 12px #33ffff; opacity: 1; }
+    100% { text-shadow: 0 0 3px #00eaff; opacity: 0.7; }
+}
+
+/* ==========================================================
+   🔹 DARK MODE
+   ========================================================== */
+
+body.dark-mode {
+    background: #121212 !important;
+    color: white !important;
+}
+
+body.dark-mode .footer-fixo,
+body.dark-mode .footer-bar {
+    background: #0b0b0b !important;
+    border-top: 1px solid #444;
+}
+
+body.dark-mode .bi,
+body.dark-mode .bi-list-ul,
+body.dark-mode #countRange,
+body.dark-mode #textoSimples
+{
+    color: #eee !important;
+}
+
+/* ==========================================================
+   🔹 ANIMAÇÃO DE ENTRADA SUAVE
+   ========================================================== */
+
+.fade-in {
+    animation: fadeInPage 0.55s ease-in-out;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+/* 🔔 Toast moderno */
+.toast {
+    border-radius: 10px !important;
+    backdrop-filter: blur(6px);
+}
+
+/* ======================================================
+   📊 TABELA ULTRA-COMPACTA (ESTILO SAP / TOTVS)
+   ====================================================== */
+.tabela-ultra-compacta {
+    width: 100%;
+    border-radius: 8px !important;
+    overflow: hidden;
+    font-size: 11px !important;
+}
+
+/* 🔹 Linhas menores */
+.tabela-ultra-compacta th,
+.tabela-ultra-compacta td {
+    padding: 2px 4px !important;
+    height: 18px !important;
+    line-height: 12px !important;
+    vertical-align: middle !important;
+}
+
+/* 🔹 Cabeçalho mais compacto */
+.tabela-ultra-compacta thead {
+    font-size: 10px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
